@@ -5,7 +5,7 @@ alert("Information \nThe Rules of the Game are that you have to remember the PRE
 var started=false;
 var level=0;
 
-$(document).keypress(function() {
+$("#starting").click(function() {
     if(!started) {
         $("#level-title").text("Level " + level);
         nextSequence();
@@ -37,7 +37,7 @@ function checkAnswer(currentLevel) {
         playSound("fail");
 
         $("body").addClass("game-over");
-        $("#level-title").text("Game Over, Press Any Key to Restart !");
+        $("#level-title").text("Game Over ! Press Start Key to Play Again");
         setTimeout(function() {
             $("body").removeClass("game-over");
         }, 200);
