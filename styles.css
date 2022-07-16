@@ -4,8 +4,8 @@ body {
 }
 
 #level-title {
-  font-family: 'Bebas Neue', cursive;
-  /* font-family: 'Press Start 2P', cursive; */
+  /* font-family: 'Bebas Neue', cursive; */
+  font-family: 'Press Start 2P', cursive;
   font-size: 5rem;
   margin:  5%;
   color: #FEF2BF;
@@ -25,6 +25,24 @@ body {
   width: 100px;
   border: 10px solid black;
   border-radius: 20%;
+}
+
+.buttonbtn {
+  margin: 15px;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.starting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto!important;
+  margin-right: auto!important;
+  padding: 0 20px;
 }
 
 .game-over {
@@ -51,7 +69,7 @@ body {
 .score {
   color: white;
   opacity: 1.2;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .pressed {
